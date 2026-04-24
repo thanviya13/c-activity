@@ -1,0 +1,47 @@
+Write a C program to find the maximum of three numbers without using logical operators.
+
+AIM:
+
+To Write a C program to find the maximum of three numbers without using logical operators.
+
+Algorithm:
+
+1.Start
+2.Input three numbers: a, b, c
+3.Assume a is the maximum → max = a
+4.Compare b with max
+   If b > max, then assign max = b
+5.Compare c with max
+   If c > max, then assign max = c
+6.Display max
+7.Stop
+Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b, c, max;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    max = a;
+
+    if (b > max) {
+        max = b;
+    }
+
+    if (c > max) {
+        max = c;
+    }
+
+    printf("Maximum = %d\n", max);
+
+    return 0;
+}
+
+```
+Output:
+
+Result:
+Thus the execution of C program to find the maximum of three numbers without using logical operators
